@@ -1,0 +1,11 @@
+flask
+pandas
+setuptools
+numpy==1.23.0
+matplotlib
+seaborn
+scipy
+scikit-learn
+scikit-surprise
+joblib
+gunicorn

@@ -1,0 +1,201 @@
+course_id,title,type,difficulty,duration_hours,avg_rating
+1,Security Course 1,Security,Beginner,65,4.2
+2,Data Science Course 2,Data Science,Advanced,40,3.8
+3,Cloud Computing Course 3,Cloud Computing,Beginner,30,4.1
+4,Programming Course 4,Programming,Beginner,85,4.8
+5,Design Course 5,Design,Intermediate,70,3.1
+6,Databases Course 6,Databases,Advanced,35,3.2
+7,DevOps Course 7,DevOps,Advanced,35,4.5
+8,AI & Machine Learning Course 8,AI & Machine Learning,Advanced,75,4.2
+9,Security Course 9,Security,Intermediate,35,4.1
+10,DevOps Course 10,DevOps,Beginner,5,4.4
+11,Web Development Course 11,Web Development,Advanced,5,3.1
+12,DevOps Course 12,DevOps,Intermediate,50,4.0
+13,AI & Machine Learning Course 13,AI & Machine Learning,Beginner,30,4.1
+14,Security Course 14,Security,Beginner,75,4.6
+15,Networking Course 15,Networking,Beginner,75,3.8
+16,Data Science Course 16,Data Science,Advanced,95,4.4
+17,Security Course 17,Security,Intermediate,55,4.2
+18,Security Course 18,Security,Advanced,50,3.7
+19,DevOps Course 19,DevOps,Advanced,75,3.6
+20,Web Development Course 20,Web Development,Intermediate,65,3.3
+21,Data Science Course 21,Data Science,Beginner,5,3.0
+22,Mobile Development Course 22,Mobile Development,Advanced,60,3.2
+23,Security Course 23,Security,Beginner,25,4.4
+24,AI & Machine Learning Course 24,AI & Machine Learning,Beginner,45,3.8
+25,Databases Course 25,Databases,Beginner,55,3.9
+26,Networking Course 26,Networking,Beginner,70,3.4
+27,Design Course 27,Design,Beginner,5,4.7
+28,Design Course 28,Design,Advanced,40,4.2
+29,Product Management Course 29,Product Management,Beginner,45,3.4
+30,Product Management Course 30,Product Management,Beginner,45,3.2
+31,Security Course 31,Security,Beginner,55,4.8
+32,Design Course 32,Design,Intermediate,10,4.8
+33,Web Development Course 33,Web Development,Advanced,60,4.8
+34,DevOps Course 34,DevOps,Beginner,35,3.3
+35,Networking Course 35,Networking,Beginner,85,4.6
+36,Web Development Course 36,Web Development,Intermediate,90,4.3
+37,Design Course 37,Design,Beginner,45,3.3
+38,DevOps Course 38,DevOps,Intermediate,40,4.0
+39,Programming Course 39,Programming,Beginner,95,3.4
+40,Cloud Computing Course 40,Cloud Computing,Intermediate,85,3.1
+41,Databases Course 41,Databases,Advanced,90,3.6
+42,Cloud Computing Course 42,Cloud Computing,Advanced,90,4.0
+43,Mobile Development Course 43,Mobile Development,Beginner,90,4.0
+44,Cloud Computing Course 44,Cloud Computing,Advanced,20,3.4
+45,Design Course 45,Design,Advanced,15,3.7
+46,AI & Machine Learning Course 46,AI & Machine Learning,Advanced,70,4.1
+47,Programming Course 47,Programming,Advanced,90,4.7
+48,Databases Course 48,Databases,Beginner,15,3.5
+49,Web Development Course 49,Web Development,Advanced,40,3.2
+50,Networking Course 50,Networking,Advanced,95,4.3
+51,Databases Course 51,Databases,Intermediate,15,3.5
+52,Databases Course 52,Databases,Intermediate,55,4.9
+53,Security Course 53,Security,Beginner,70,3.6
+54,Data Science Course 54,Data Science,Advanced,50,3.2
+55,Design Course 55,Design,Beginner,95,3.2
+56,Cloud Computing Course 56,Cloud Computing,Beginner,90,4.8
+57,Networking Course 57,Networking,Advanced,50,4.7
+58,Cloud Computing Course 58,Cloud Computing,Advanced,60,4.7
+59,Networking Course 59,Networking,Intermediate,45,3.9
+60,Mobile Development Course 60,Mobile Development,Advanced,60,3.3
+61,AI & Machine Learning Course 61,AI & Machine Learning,Intermediate,70,3.9
+62,Programming Course 62,Programming,Intermediate,95,4.0
+63,Product Management Course 63,Product Management,Intermediate,65,3.8
+64,Product Management Course 64,Product Management,Intermediate,55,3.8
+65,AI & Machine Learning Course 65,AI & Machine Learning,Intermediate,65,4.4
+66,Networking Course 66,Networking,Advanced,30,4.8
+67,Networking Course 67,Networking,Intermediate,20,4.0
+68,Data Science Course 68,Data Science,Beginner,25,4.3
+69,AI & Machine Learning Course 69,AI & Machine Learning,Advanced,50,3.3
+70,Web Development Course 70,Web Development,Beginner,30,4.5
+71,Data Science Course 71,Data Science,Beginner,35,4.1
+72,Programming Course 72,Programming,Intermediate,70,3.1
+73,Mobile Development Course 73,Mobile Development,Intermediate,55,3.4
+74,Networking Course 74,Networking,Advanced,55,3.6
+75,Security Course 75,Security,Beginner,35,4.2
+76,DevOps Course 76,DevOps,Intermediate,75,4.9
+77,DevOps Course 77,DevOps,Beginner,5,3.5
+78,Security Course 78,Security,Advanced,15,4.7
+79,Programming Course 79,Programming,Intermediate,65,3.3
+80,Product Management Course 80,Product Management,Intermediate,10,3.2
+81,Product Management Course 81,Product Management,Beginner,5,4.0
+82,Web Development Course 82,Web Development,Intermediate,35,3.2
+83,Data Science Course 83,Data Science,Beginner,60,4.4
+84,DevOps Course 84,DevOps,Intermediate,60,3.7
+85,Mobile Development Course 85,Mobile Development,Advanced,85,3.3
+86,AI & Machine Learning Course 86,AI & Machine Learning,Beginner,85,3.4
+87,Databases Course 87,Databases,Advanced,40,4.3
+88,Programming Course 88,Programming,Advanced,25,4.4
+89,DevOps Course 89,DevOps,Beginner,90,4.0
+90,Web Development Course 90,Web Development,Intermediate,45,4.9
+91,AI & Machine Learning Course 91,AI & Machine Learning,Advanced,85,3.4
+92,Networking Course 92,Networking,Intermediate,35,3.1
+93,Networking Course 93,Networking,Advanced,45,3.4
+94,Databases Course 94,Databases,Intermediate,90,4.5
+95,Security Course 95,Security,Advanced,15,3.6
+96,AI & Machine Learning Course 96,AI & Machine Learning,Advanced,85,4.3
+97,Databases Course 97,Databases,Advanced,60,3.2
+98,Data Science Course 98,Data Science,Advanced,25,4.1
+99,AI & Machine Learning Course 99,AI & Machine Learning,Advanced,60,4.1
+100,Databases Course 100,Databases,Beginner,20,4.6
+101,Product Management Course 101,Product Management,Beginner,90,4.0
+102,AI & Machine Learning Course 102,AI & Machine Learning,Intermediate,10,3.0
+103,AI & Machine Learning Course 103,AI & Machine Learning,Intermediate,65,4.1
+104,Cloud Computing Course 104,Cloud Computing,Advanced,35,3.0
+105,Programming Course 105,Programming,Beginner,60,4.3
+106,Databases Course 106,Databases,Advanced,50,3.2
+107,Design Course 107,Design,Beginner,5,3.5
+108,Cloud Computing Course 108,Cloud Computing,Beginner,70,3.6
+109,Data Science Course 109,Data Science,Intermediate,25,3.1
+110,Programming Course 110,Programming,Beginner,70,3.1
+111,Programming Course 111,Programming,Beginner,20,3.4
+112,AI & Machine Learning Course 112,AI & Machine Learning,Beginner,25,3.2
+113,DevOps Course 113,DevOps,Advanced,70,4.2
+114,Data Science Course 114,Data Science,Beginner,35,5.0
+115,Web Development Course 115,Web Development,Beginner,95,4.0
+116,AI & Machine Learning Course 116,AI & Machine Learning,Advanced,10,3.8
+117,Product Management Course 117,Product Management,Beginner,15,4.7
+118,Networking Course 118,Networking,Beginner,75,3.4
+119,Product Management Course 119,Product Management,Advanced,85,3.3
+120,AI & Machine Learning Course 120,AI & Machine Learning,Advanced,90,4.0
+121,Programming Course 121,Programming,Advanced,15,3.4
+122,Databases Course 122,Databases,Beginner,75,3.1
+123,Security Course 123,Security,Intermediate,25,3.2
+124,Product Management Course 124,Product Management,Advanced,45,3.1
+125,Data Science Course 125,Data Science,Intermediate,45,3.7
+126,Product Management Course 126,Product Management,Beginner,55,3.2
+127,Databases Course 127,Databases,Advanced,30,3.5
+128,Networking Course 128,Networking,Intermediate,90,3.2
+129,Mobile Development Course 129,Mobile Development,Beginner,25,5.0
+130,Data Science Course 130,Data Science,Beginner,95,4.6
+131,Databases Course 131,Databases,Intermediate,40,4.1
+132,Programming Course 132,Programming,Intermediate,95,4.7
+133,Mobile Development Course 133,Mobile Development,Beginner,80,4.4
+134,Web Development Course 134,Web Development,Beginner,50,3.2
+135,Web Development Course 135,Web Development,Intermediate,35,4.8
+136,AI & Machine Learning Course 136,AI & Machine Learning,Beginner,95,4.8
+137,AI & Machine Learning Course 137,AI & Machine Learning,Intermediate,55,3.5
+138,Design Course 138,Design,Advanced,90,4.6
+139,Mobile Development Course 139,Mobile Development,Advanced,10,3.6
+140,Web Development Course 140,Web Development,Beginner,45,4.3
+141,Data Science Course 141,Data Science,Beginner,15,3.3
+142,Cloud Computing Course 142,Cloud Computing,Intermediate,35,4.1
+143,Data Science Course 143,Data Science,Advanced,75,4.9
+144,DevOps Course 144,DevOps,Intermediate,20,3.6
+145,Programming Course 145,Programming,Intermediate,85,4.2
+146,Programming Course 146,Programming,Intermediate,90,4.7
+147,Mobile Development Course 147,Mobile Development,Advanced,15,4.2
+148,Mobile Development Course 148,Mobile Development,Advanced,55,4.6
+149,Cloud Computing Course 149,Cloud Computing,Advanced,10,3.5
+150,Security Course 150,Security,Beginner,15,3.9
+151,Design Course 151,Design,Advanced,55,3.4
+152,Data Science Course 152,Data Science,Advanced,70,3.5
+153,Web Development Course 153,Web Development,Advanced,15,4.9
+154,Mobile Development Course 154,Mobile Development,Beginner,75,3.8
+155,Web Development Course 155,Web Development,Intermediate,95,3.5
+156,Cloud Computing Course 156,Cloud Computing,Advanced,5,3.6
+157,DevOps Course 157,DevOps,Advanced,10,3.4
+158,Programming Course 158,Programming,Beginner,60,4.1
+159,Mobile Development Course 159,Mobile Development,Advanced,40,3.3
+160,Product Management Course 160,Product Management,Beginner,40,4.5
+161,Data Science Course 161,Data Science,Advanced,15,4.6
+162,Mobile Development Course 162,Mobile Development,Beginner,15,3.4
+163,Product Management Course 163,Product Management,Intermediate,70,4.2
+164,Mobile Development Course 164,Mobile Development,Beginner,30,3.5
+165,Mobile Development Course 165,Mobile Development,Advanced,10,4.6
+166,Web Development Course 166,Web Development,Beginner,85,3.0
+167,Data Science Course 167,Data Science,Intermediate,90,4.0
+168,DevOps Course 168,DevOps,Advanced,65,4.5
+169,Mobile Development Course 169,Mobile Development,Intermediate,45,3.1
+170,DevOps Course 170,DevOps,Advanced,45,3.5
+171,Product Management Course 171,Product Management,Intermediate,75,4.0
+172,DevOps Course 172,DevOps,Beginner,50,4.6
+173,Data Science Course 173,Data Science,Beginner,10,4.1
+174,Product Management Course 174,Product Management,Beginner,5,4.6
+175,AI & Machine Learning Course 175,AI & Machine Learning,Intermediate,35,3.3
+176,Design Course 176,Design,Intermediate,70,4.4
+177,Data Science Course 177,Data Science,Intermediate,60,3.2
+178,Web Development Course 178,Web Development,Beginner,15,4.8
+179,Product Management Course 179,Product Management,Intermediate,45,3.1
+180,Product Management Course 180,Product Management,Intermediate,60,4.7
+181,Data Science Course 181,Data Science,Intermediate,75,4.6
+182,Design Course 182,Design,Advanced,80,4.1
+183,AI & Machine Learning Course 183,AI & Machine Learning,Intermediate,15,3.1
+184,Mobile Development Course 184,Mobile Development,Intermediate,70,3.2
+185,DevOps Course 185,DevOps,Advanced,60,3.3
+186,Cloud Computing Course 186,Cloud Computing,Intermediate,95,5.0
+187,Security Course 187,Security,Beginner,40,4.7
+188,Networking Course 188,Networking,Advanced,95,3.3
+189,DevOps Course 189,DevOps,Intermediate,95,3.5
+190,Databases Course 190,Databases,Beginner,15,3.2
+191,Cloud Computing Course 191,Cloud Computing,Advanced,75,3.5
+192,Mobile Development Course 192,Mobile Development,Beginner,25,3.7
+193,Mobile Development Course 193,Mobile Development,Intermediate,90,4.7
+194,Product Management Course 194,Product Management,Intermediate,10,4.0
+195,Data Science Course 195,Data Science,Advanced,10,4.6
+196,Design Course 196,Design,Intermediate,95,4.2
+197,DevOps Course 197,DevOps,Beginner,60,3.8
+198,Data Science Course 198,Data Science,Beginner,75,3.5
+199,AI & Machine Learning Course 199,AI & Machine Learning,Intermediate,50,3.5
+200,Data Science Course 200,Data Science,Advanced,25,4.7

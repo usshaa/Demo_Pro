@@ -1,0 +1,225 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Course Recommender</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .recommendation-container {
+            display: none;
+        }
+        .loader {
+            text-align: center;
+            display: none;
+        }
+        .course-title {
+            font-weight: bold;
+            color: #3a3a3a;
+        }
+        .difficulty {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+        .difficulty-Beginner {
+            background-color: #d1e7dd;
+            color: #0f5132;
+        }
+        .difficulty-Intermediate {
+            background-color: #fff3cd;
+            color: #664d03;
+        }
+        .difficulty-Advanced {
+            background-color: #f8d7da;
+            color: #842029;
+        }
+        .rating-stars {
+            color: #ffc107;
+        }
+        .rating-value {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .course-type {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .course-duration {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>IT Course Recommender</h1>
+            <p class="lead">Find the best courses for your IT career path</p>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Get Personalized Recommendations</h5>
+                        <form id="recommendation-form">
+                            <div class="mb-3">
+                                <label for="user-id" class="form-label">User ID (Optional)</label>
+                                <input type="number" class="form-control" id="user-id" placeholder="Enter your user ID if you have one">
+                                <div class="form-text">If you don't have a user ID, we'll create recommendations based on your role.</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="role" class="form-label">IT Role</label>
+                                <select class="form-select" id="role" required>
+                                    <option value="" selected disabled>Select your role</option>
+                                    {% for role in roles %}
+                                    <option value="{{ role }}">{{ role }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="experience" class="form-label">Experience Level</label>
+                                <select class="form-select" id="experience">
+                                    <option value="" selected disabled>Select your experience level</option>
+                                    {% for level in experience_levels %}
+                                    <option value="{{ level }}">{{ level }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-100">Get Recommendations</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="loader" id="loader">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p>Finding the best courses for you...</p>
+                </div>
+                
+                <div class="recommendation-container" id="recommendation-container">
+                    <h3 class="mb-4">Recommended Courses</h3>
+                    <div class="row" id="recommendations-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('recommendation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loader
+            document.getElementById('loader').style.display = 'block';
+            document.getElementById('recommendation-container').style.display = 'none';
+            
+            // Get form values
+            const userId = document.getElementById('user-id').value;
+            const role = document.getElementById('role').value;
+            const experience = document.getElementById('experience').value;
+            
+            // Send request
+            fetch('/recommend', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: new URLSearchParams({
+                    'user_id': userId,
+                    'role': role,
+                    'experience': experience,
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide loader
+                document.getElementById('loader').style.display = 'none';
+                
+                // Show recommendations
+                displayRecommendations(data);
+                document.getElementById('recommendation-container').style.display = 'block';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('loader').style.display = 'none';
+                alert('An error occurred while fetching recommendations.');
+            });
+        });
+        
+        function displayRecommendations(courses) {
+            const container = document.getElementById('recommendations-list');
+            container.innerHTML = '';
+            
+            if (courses.length === 0) {
+                container.innerHTML = '<div class="col-12"><p>No recommendations found. Try different criteria.</p></div>';
+                return;
+            }
+            
+            courses.forEach(course => {
+                const courseCard = document.createElement('div');
+                courseCard.className = 'col-md-6 mb-4';
+                
+                // Generate stars based on rating
+                const rating = course.predicted_rating;
+                let starsHtml = '';
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= Math.floor(rating)) {
+                        starsHtml += '<i class="bi bi-star-fill"></i>';
+                    } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
+                        starsHtml += '<i class="bi bi-star-half"></i>';
+                    } else {
+                        starsHtml += '<i class="bi bi-star"></i>';
+                    }
+                }
+                
+                courseCard.innerHTML = `
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title course-title">${course.title}</h5>
+                            <div class="mb-2">
+                                <span class="difficulty difficulty-${course.difficulty}">${course.difficulty}</span>
+                                <span class="course-type">${course.type}</span>
+                            </div>
+                            <p class="course-duration"><i class="bi bi-clock"></i> ${course.duration_hours} hours</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <div class="rating-stars">★★★★★</div>
+                                <span class="rating-value">${rating.toFixed(1)}</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-sm btn-outline-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(courseCard);
+            });
+        }
+    </script>
+</body>
+</html>
