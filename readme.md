@@ -1,9 +1,9 @@
 Step 1: Create Folder and Open in VS Code
 Step 2: Open terminal and Create/activate virtual env using this 
-cmd --> python -m venv myenv
-cmd --> myenv\Scripts\activate
+cmd --> python -m venv newenv
+cmd --> newenv\Scripts\activate
 Step 3: Create requirements.txt for installing project dependency pacakages using this
-cmd --> pip install requirements.txt
+cmd --> pip install -r requirements.txt
 Step 4: Collect Data and Store inside the project folder or Create Python Script synthetic_data.py to generate Synthetic data and save the files in csv format users.csv, courses.csv, ratings.csv
 Step 5: Start Doing Exploratory Data Analysis with your synthetic datas
 Step 6: Start Building Recommendation model with SVD algorithm (Collaborative Filtering) and save model as pkl file
